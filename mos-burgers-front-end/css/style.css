@@ -1,0 +1,140 @@
+.body{
+    background-color: rgb(46, 45, 45);
+}
+
+
+
+
+.customer-manage{
+
+    
+     
+    background-color: rgb(41, 14, 102);
+    border-radius: 10px;
+    width: 95%;
+    height: 150px;
+
+}
+
+.customer-manage-icon{
+    
+    background-color: rgb(92, 48, 173);
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+        
+}
+
+.customer-manage-icon:hover{
+    background-color: rgb(140, 84, 243);
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.customer-manage-icon img{
+    padding-top: 9px;
+    padding-left: 9px;
+
+}
+
+
+/* From Uiverse.io by foxyyyyyyyyyyyyy */ 
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 180px;
+    
+  }
+
+
+
+
+  
+  .form-control input {
+    background-color: rgba(51, 39, 80, 0.699);
+    border: 0px;
+    border-bottom: 2px #5d3a9e solid;
+    display: block;
+    width: 90%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #b1b4b6;
+    height: 50px;
+    font-size:medium;
+  }
+  
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .form-control label span {
+    display: inline-block;
+    font-size: medium;
+    min-width: 5px;
+    color: #c4c3c3;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control input:focus+label span,
+  .form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+  }
+
+
+
+  .cus{
+    background-color: rgb(51, 39, 80);
+    border-radius: 20px;
+    height: 670px;
+  }
+
+
+  .pnl-customer-button{
+    display: flex;
+    justify-content:center;
+    
+}
+
+.pnl-customer-button div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer-table-div{
+    margin-left: auto;
+    margin-right: auto;
+    height: 670px;
+    width: 95%; 
+    overflow: auto;
+    scrollbar-width: none;
+
+    background-color:transparent
+}
+
+
+.product-div{
+    width: 450px;
+    height: 200px;
+    background-color: rgb(92, 48, 173);
+}
+
+
+
+
+
+
+
+

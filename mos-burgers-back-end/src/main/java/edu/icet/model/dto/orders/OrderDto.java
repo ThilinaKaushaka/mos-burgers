@@ -1,6 +1,7 @@
 package edu.icet.model.dto.orders;
 
 import lombok.*;
+import util.OrderStatus;
 import util.PaymentType;
 
 @Data
@@ -14,4 +15,5 @@ public class OrderDto {
     private String customerName;
     private PaymentType paymentType;
     private Double total;
+    private OrderStatus orderStatus;
 }

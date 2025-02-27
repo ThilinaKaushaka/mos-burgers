@@ -57,7 +57,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public void placeOrder(PlaceOrderDto placeOrderDto) {
-        addOrder(OrderDto.builder().id(placeOrderDto.getId()).customerId(placeOrderDto.getCustomerId()).customerName(placeOrderDto.getCustomerName()).paymentType(placeOrderDto.getPaymentType()).total(placeOrderDto.getTotal()).build());
+        addOrder(OrderDto.builder().id(placeOrderDto.getId()).customerId(placeOrderDto.getCustomerId()).customerName(placeOrderDto.getCustomerName()).paymentType(placeOrderDto.getPaymentType()).total(placeOrderDto.getTotal()).orderStatus(placeOrderDto.getOrderStatus()).build());
         for (OrderDetailsDto orderDetailsDto:placeOrderDto.getOrderDetailsDtoList()){
             orderDetailsRepository.save(mapper.map(orderDetailsDto, OrderDetailsEntity.class));
             itemRepository.updateTable(orderDetailsDto.getItemId(),orderDetailsDto.getQty());
@@ -67,14 +67,14 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public PlaceOrderDto getOrderAndOrderDetailsById(String id) {
         OrderDto orderDto = viewOrderById(id);
-        return PlaceOrderDto.builder().id(orderDto.getId()).customerId(orderDto.getCustomerId()).customerName(orderDto.getCustomerName()).total(orderDto.getTotal()).orderDetailsDtoList(getList(id)).build();
+        return PlaceOrderDto.builder().id(orderDto.getId()).customerId(orderDto.getCustomerId()).customerName(orderDto.getCustomerName()).paymentType(orderDto.getPaymentType()).total(orderDto.getTotal()).orderDetailsDtoList(getList(id)).orderStatus(orderDto.getOrderStatus()).build();
     }
 
     @Override
     public List<PlaceOrderDto> getPlaceOrders() {
         List<PlaceOrderDto> placeOrderList=new ArrayList<>();
         for(OrderDto orderDto:getAll()){
-            placeOrderList.add(PlaceOrderDto.builder().id(orderDto.getId()).customerId(orderDto.getCustomerId()).customerName(orderDto.getCustomerName()).paymentType(orderDto.getPaymentType()).total(orderDto.getTotal()).orderDetailsDtoList(getList(orderDto.getId())).build());
+            placeOrderList.add(PlaceOrderDto.builder().id(orderDto.getId()).customerId(orderDto.getCustomerId()).customerName(orderDto.getCustomerName()).paymentType(orderDto.getPaymentType()).total(orderDto.getTotal()).orderStatus(orderDto.getOrderStatus()).orderDetailsDtoList(getList(orderDto.getId())).build());
         }
         return placeOrderList;
     }

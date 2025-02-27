@@ -3,6 +3,7 @@ package edu.icet.model.entity.orders;
 import edu.icet.model.entity.customer.CustomerEntity;
 import jakarta.persistence.*;
 import lombok.*;
+import util.OrderStatus;
 import util.PaymentType;
 
 @Data
@@ -23,4 +24,7 @@ public class OrderEntity {
     private PaymentType paymentType;
 
     private Double total;
+
+    @Enumerated(EnumType.STRING)
+    private OrderStatus orderStatus;
 }

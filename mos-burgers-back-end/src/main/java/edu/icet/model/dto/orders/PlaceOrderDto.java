@@ -2,6 +2,7 @@ package edu.icet.model.dto.orders;
 
 import edu.icet.model.dto.order_detail.OrderDetailsDto;
 import lombok.*;
+import util.OrderStatus;
 import util.PaymentType;
 
 import java.util.List;
@@ -17,5 +18,6 @@ public class PlaceOrderDto {
     private String customerName;
     private PaymentType paymentType;
     private Double total;
+    private OrderStatus orderStatus;
     private List<OrderDetailsDto> orderDetailsDtoList;
 }

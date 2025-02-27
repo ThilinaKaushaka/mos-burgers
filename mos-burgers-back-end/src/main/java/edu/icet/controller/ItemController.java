@@ -46,5 +46,10 @@ public class ItemController {
         return itemService.viewByCategory(category);
     }
 
+    @GetMapping("/search-by-name-or-id/{search}")
+    List<ItemDto> searchByLikeNameOrId(@PathVariable String search){
+        return itemService.searchLikeANameOrId(search);
+    }
+
 
 }

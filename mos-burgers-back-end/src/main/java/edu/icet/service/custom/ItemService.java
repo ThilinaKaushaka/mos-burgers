@@ -13,4 +13,5 @@ public interface ItemService extends SuperService {
     List<ItemDto> getAll();
 
     List<ItemDto> viewByCategory(String category);
+    List<ItemDto> searchLikeANameOrId(String search);
 }

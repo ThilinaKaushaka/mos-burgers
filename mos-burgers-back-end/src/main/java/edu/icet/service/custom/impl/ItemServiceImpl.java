@@ -58,5 +58,14 @@ public class ItemServiceImpl implements ItemService {
         return list;
     }
 
+    @Override
+    public List<ItemDto> searchLikeANameOrId(String search) {
+        List<ItemDto> list=new ArrayList<>();
+        for(ItemEntity itemEntity:itemRepository.findLikeANameOrId(search)){
+            list.add(mapper.map(itemEntity, ItemDto.class));
+        }
+        return list;
+    }
+
 
 }

@@ -22,5 +22,9 @@ public interface ItemRepository extends SuperDao , JpaRepository <ItemEntity,Str
     @Query(value = "UPDATE item SET quantity = quantity - :qty WHERE id = :id",nativeQuery = true)
     void updateTable(@Param("id")String id,@Param("qty")Integer qty);
 
+    @Transactional
+    @Query(value = "SELECT * FROM item WHERE name LIKE %:search% OR id LIKE %:search% ",nativeQuery = true)
+    List<ItemEntity> findLikeANameOrId(@Param("search")String search);
+
 
 }

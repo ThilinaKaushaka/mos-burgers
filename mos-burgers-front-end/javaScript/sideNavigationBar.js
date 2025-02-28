@@ -20,3 +20,6 @@ function customMenuBtnChange() {
     customCloseBtn.classList.replace("bx-menu-alt-right", "bx-menu"); // Replacing the icons class
   }
 }
+
+
+

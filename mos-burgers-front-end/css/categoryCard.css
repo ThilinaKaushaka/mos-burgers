@@ -53,7 +53,13 @@
   .custom-card__subtitle {
     color: var(--sub-color);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
+    color: #b193f7;
+
+  }
+
+  .ct-type{
+    color: #ecc1f7;
   }
   
   .custom-card__icon {
@@ -194,7 +200,7 @@
   }
 
   .col:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
   }
 
   @keyframes bouncing {

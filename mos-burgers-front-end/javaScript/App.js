@@ -1,4 +1,4 @@
-document.getElementById("btn-customer").addEventListener("click", function() {
+document.getElementById("btn-customer").addEventListener("click", () => {
     document.getElementById("custom-home-section").innerHTML = `
 
         <br><br><br>
@@ -286,6 +286,267 @@ document.getElementById("btn-customer").addEventListener("click", function() {
                 </div>
             </div>
         </div>
-    `;   
+    `;
 });
 
+document.getElementById("btn-order").addEventListener("click", () => {
+    document.getElementById('custom-home-section').innerHTML = `
+        <br>
+    <div class="container" >
+
+
+      <!--1st' row-->
+      <div class="row">
+
+
+        <!--all-->
+        <div class="col d-flex justify-content-center">
+
+          <!-- From Uiverse.io -->
+          <button class="all-button" data-text="Awesome">
+            <span class="all-actual-text">&nbsp;All&nbsp;</span>
+            <span aria-hidden="true" class="all-hover-text">&nbsp;All&nbsp;</span>
+          </button>
+
+        </div>
+
+
+      </div>
+
+
+
+      <br><br>
+      <!--2nd' row-->
+      <div class="row">
+
+
+        <!--burger  -->
+        <div class="col d-flex justify-content-center" >
+          
+          <div data-aos="zoom-in"  data-aos-easing="linear"data-aos-duration="1500">
+            <div class="custom-card " >
+              <div class="custom-card__image">
+  
+                <!--image-burger-->
+                <img src="../media/img/item/chicken burger best.png" alt="" class="category-img" >
+
+              </div>
+              <div class="custom-card__subtitle">typs : <span class="ct-type" id="ct-type">20</span></div>
+              <div class="custom-card__content">
+                <div class="custom-card__title">Burger</div>
+                <div class="custom-card__icon">
+                  <svg color="rgb(224, 223, 220)"
+                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: rgb(224, 223, 220); flex-shrink: 0; cursor: auto;"
+                    viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                    <g color="rgb(224, 223, 220)">
+                      <circle opacity="0.2" r="96" cy="128" cx="128"></circle>
+                      <circle stroke-width="16" stroke-miterlimit="10" stroke="rgb(224, 223, 220)" fill="none" r="96"
+                        cy="128" cx="128"></circle>
+                      <polyline stroke-width="16" stroke-linejoin="round" stroke-linecap="round"
+                        stroke="rgb(224, 223, 220)" fill="none" points="134.1 161.9 168 128 134.1 94.1"></polyline>
+                      <line stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)"
+                        fill="none" y2="128" x2="168" y1="128" x1="88"></line>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!--submarines-->
+        <div class="col d-flex justify-content-center">
+
+          <div data-aos="zoom-in"  data-aos-easing="linear"data-aos-duration="1500">
+            <div class="custom-card">
+              <div class="custom-card__image">
+  
+                <!--image-submarines-->
+                <img src="../media/img/item/submarine.png" alt="" class="category-img">
+  
+              </div>
+              <div class="custom-card__subtitle">typs : <span class="ct-type" id="ct-type">20</span></span></div>
+              <div class="custom-card__content">
+                <div class="custom-card__title">Submarine</div>
+                <div class="custom-card__icon">
+                  <svg color="rgb(224, 223, 220)"
+                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: rgb(224, 223, 220); flex-shrink: 0; cursor: auto;"
+                    viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                    <g color="rgb(224, 223, 220)">
+                      <circle opacity="0.2" r="96" cy="128" cx="128"></circle>
+                      <circle stroke-width="16" stroke-miterlimit="10" stroke="rgb(224, 223, 220)" fill="none" r="96"
+                        cy="128" cx="128"></circle>
+                      <polyline stroke-width="16" stroke-linejoin="round" stroke-linecap="round"
+                        stroke="rgb(224, 223, 220)" fill="none" points="134.1 161.9 168 128 134.1 94.1"></polyline>
+                      <line stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)"
+                        fill="none" y2="128" x2="168" y1="128" x1="88"></line>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- fries-->
+        <div class="col d-flex justify-content-center">
+
+          <div data-aos="zoom-in"  data-aos-easing="linear"data-aos-duration="1500">
+            <div class="custom-card">
+              <div class="custom-card__image">
+  
+                <!--image-fries-->
+                <img src="../media/img/item/french fries.png" alt="" srcset="" class="category-img">
+  
+              </div>
+              <div class="custom-card__subtitle">typs : <span class="ct-type" id="ct-type">20</span></div>
+              <div class="custom-card__content">
+                <div class="custom-card__title">French fries</div>
+                <div class="custom-card__icon">
+                  <svg color="rgb(224, 223, 220)"
+                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: rgb(224, 223, 220); flex-shrink: 0; cursor: auto;"
+                    viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                    <g color="rgb(224, 223, 220)">
+                      <circle opacity="0.2" r="96" cy="128" cx="128"></circle>
+                      <circle stroke-width="16" stroke-miterlimit="10" stroke="rgb(224, 223, 220)" fill="none" r="96"
+                        cy="128" cx="128"></circle>
+                      <polyline stroke-width="16" stroke-linejoin="round" stroke-linecap="round"
+                        stroke="rgb(224, 223, 220)" fill="none" points="134.1 161.9 168 128 134.1 94.1"></polyline>
+                      <line stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)"
+                        fill="none" y2="128" x2="168" y1="128" x1="88"></line>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <br><br><br>
+
+      <!--3td' row-->
+      <div class="row">
+
+        
+        <!-- pasta-->
+        <div class="col d-flex justify-content-center">
+          
+          <div data-aos="zoom-in"  data-aos-easing="linear"data-aos-duration="1500">
+            <div class="custom-card">
+              <div class="custom-card__image">
+  
+                <!--image-pasta-->
+                <img src="../media/img/item/pasta.png" alt="" srcset="" class="category-img">
+  
+              </div>
+              <div class="custom-card__subtitle">typs : <span class="ct-type" id="ct-type">20</span></div>
+              <div class="custom-card__content">
+                <div class="custom-card__title">Pasta</div>
+                <div class="custom-card__icon">
+                  <svg color="rgb(224, 223, 220)"
+                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: rgb(224, 223, 220); flex-shrink: 0; cursor: auto;"
+                    viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                    <g color="rgb(224, 223, 220)">
+                      <circle opacity="0.2" r="96" cy="128" cx="128"></circle>
+                      <circle stroke-width="16" stroke-miterlimit="10" stroke="rgb(224, 223, 220)" fill="none" r="96"
+                        cy="128" cx="128"></circle>
+                      <polyline stroke-width="16" stroke-linejoin="round" stroke-linecap="round"
+                        stroke="rgb(224, 223, 220)" fill="none" points="134.1 161.9 168 128 134.1 94.1"></polyline>
+                      <line stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)"
+                        fill="none" y2="128" x2="168" y1="128" x1="88"></line>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!--chicken-->
+        <div class="col d-flex justify-content-center">
+          
+          <div data-aos="zoom-in"  data-aos-easing="linear"data-aos-duration="1500">
+            <div class="custom-card">
+              <div class="custom-card__image">
+  
+                <!--image-chicken-->
+                <img src="../media/img/item/fried chicken.png" alt="" srcset="" class="category-img">
+  
+              </div>
+              <div class="custom-card__subtitle">typs : <span class="ct-type" id="ct-type">20</span></div>
+              <div class="custom-card__content">
+                <div class="custom-card__title">Fried chicken</div>
+                <div class="custom-card__icon">
+                  <svg color="rgb(224, 223, 220)"
+                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: rgb(224, 223, 220); flex-shrink: 0; cursor: auto;"
+                    viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                    <g color="rgb(224, 223, 220)">
+                      <circle opacity="0.2" r="96" cy="128" cx="128"></circle>
+                      <circle stroke-width="16" stroke-miterlimit="10" stroke="rgb(224, 223, 220)" fill="none" r="96"
+                        cy="128" cx="128"></circle>
+                      <polyline stroke-width="16" stroke-linejoin="round" stroke-linecap="round"
+                        stroke="rgb(224, 223, 220)" fill="none" points="134.1 161.9 168 128 134.1 94.1"></polyline>
+                      <line stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)"
+                        fill="none" y2="128" x2="168" y1="128" x1="88"></line>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!--beverages-->
+        <div class="col d-flex justify-content-center">
+          
+          <div data-aos="zoom-in"  data-aos-easing="linear"data-aos-duration="1500">
+            <div class="custom-card">
+              <div class="custom-card__image">
+  
+                <!--image-beverages-->
+                <img src="../media/img/item/lime juice.png" alt="" srcset="" class="category-img">
+  
+              </div>
+              <div class="custom-card__subtitle">typs : <span class="ct-type" id="ct-type">20</span></div>
+              <div class="custom-card__content">
+                <div class="custom-card__title">Beverages</div>
+                <div class="custom-card__icon">
+                  <svg color="rgb(224, 223, 220)"
+                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: rgb(224, 223, 220); flex-shrink: 0; cursor: auto;"
+                    viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                    <g color="rgb(224, 223, 220)">
+                      <circle opacity="0.2" r="96" cy="128" cx="128"></circle>
+                      <circle stroke-width="16" stroke-miterlimit="10" stroke="rgb(224, 223, 220)" fill="none" r="96"
+                        cy="128" cx="128" class="circle"></circle>
+                      <polyline stroke-width="16" stroke-linejoin="round" stroke-linecap="round"
+                        stroke="rgb(224, 223, 220)" fill="none" points="134.1 161.9 168 128 134.1 94.1"></polyline>
+                      <line stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)"
+                        fill="none" y2="128" x2="168" y1="128" x1="88"></line>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+    `;
+});

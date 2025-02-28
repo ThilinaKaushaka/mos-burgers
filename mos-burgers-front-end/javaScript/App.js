@@ -1,4 +1,3 @@
-
 document.getElementById("btn-customer").addEventListener("click", function() {
     document.getElementById("custom-home-section").innerHTML = `
 
